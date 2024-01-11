@@ -122,19 +122,21 @@
  }
 
  /* Footer */
- footer {
-     color: beige;
-     background-color: rgb(34, 113, 224);
+ /* Social-networks-link icons*/
+ #social-networks-link {
 
- }
-
- footer a {
-     text-decoration: none;
-     color: inherit;
      list-style-type: none;
+     text-align: center;
+     padding: 7px 0;
      display: flex;
+     justify-content: space-evenly;
 
  }
+
+
+
+
+
 
  /* Dealing with different Devices and Screen Sizes displaying */
 
