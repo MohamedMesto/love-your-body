@@ -1,59 +1,65 @@
-/* Google fonts import */
+ /* Google fonts import Lemon styles */
+ @import url('https://fonts.googleapis.com/css2?family=Lemon');
 
-/* the template of importing a font file */
-/* @import url('https://fonts.googleapis.com/css2?family=FontName'); */
+ /* Google fonts import Lato styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Lemon');
-@import url('https://fonts.googleapis.com/css2?family=Lato');
+ @import url('https://fonts.googleapis.com/css2?family=Lato');
 
-/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap"); */
-
-
-
-
-
-
+ /* Asterisk wildcard selector to override default styles added by the browser */
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
 
 
 
-/* Asterisk wildcard selector to override default styles added by the browser */
+ /*General styles */
+ body {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     /*Generic project styles */
+     color: #0fc36c;
+     font-family: "Lato", sans-serif;
+ }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+ /* Header */
+ header {
+     color: beige;
+     background-color: black;
+     z-index: 91;
+     width: 100%;
+     padding: 0 1rem;
+     position: fixed;
+     box-shadow: 0 2px 2px #3a3a3a;
+ }
 
-/*General styles */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /*Generic project styles */
-    color: #0fc36c;
-    font-family: 'Lato', Geneva, Tahoma, sans-serif;
-}
+ h1,
+ h2 {
+     font-family: "Lemon", sans-serif;
+ }
 
-/* Header */
-header {
-    color: beige;
-    background-color: black;
-}
+ ol,
+ ul {
+     list-style-type: none;
+ }
 
-h1,
-h2 {
-    font-family: 'Lemon', sans-serif;
-}
 
-/* Main content */
-main {
-    background-color: rgb(231, 210, 24);
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-}
+ header a {
+     text-decoration: none;
+     color: inherit;
+ }
 
-/* Footer */
-footer {
-    color: beige;
-    background-color: rgb(197, 13, 13);
-}
+ /* Main content */
+ main {
+     background-color: rgb(231, 210, 24);
+     /* Make main element take up any surplus space to push footer down */
+     flex: 1 0 auto;
+ }
+
+ /* Footer */
+ footer {
+     color: beige;
+     background-color: rgb(197, 13, 13);
+ }
