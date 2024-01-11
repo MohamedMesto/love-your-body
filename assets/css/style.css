@@ -27,7 +27,7 @@
  /* Header */
  header {
      color: beige;
-     background-color: black;
+     background-color: rgb(0, 0, 0);
      z-index: 91;
      width: 100%;
      padding: 0 1rem;
@@ -36,7 +36,7 @@
      display: flex;
 
      justify-content: space-between;
-     box-shadow: 4px 4px 2px 1px rgb(34, 113, 224);
+     box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .8);
      /* show menu in vertical alignment*/
      align-items: baseline;
  }
@@ -65,7 +65,7 @@
  .active_link {
      /* border: 1px solid rgb(34, 113, 224);
      border-radius: 5px; */
-     box-shadow: 4px 4px 2px 1px rgba(230, 230, 14, 0.8);
+     box-shadow: 2px 2px 2px 1px rgba(230, 230, 14, 0.8);
  }
 
 
@@ -73,7 +73,7 @@
  header a {
      text-decoration: none;
      color: inherit;
-     box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, .8);
+     box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .8);
  }
 
  hr {
@@ -83,7 +83,7 @@
 
  /* Navbar styles with dropdown toggle */
  nav {
-     background-color: black;
+     background-color: rgb(0, 0, 0);
      position: absolute;
      left: 0;
      width: 100%;
@@ -156,5 +156,32 @@
          display: none;
      }
 
+     #fasting_logo {
+         font-size: 290%;
+         line-height: 80px;
+         margin: 0 0.5rem;
+     }
 
+     /* Main content */
+     main {
+         /* Push main content down to accommodate larger header */
+         margin-top: 79px;
+     }
+
+ }
+
+
+ /* enable it , only if we need to active them on all devices sizes  */
+ /* #main_menu a:hover {
+     box-shadow: 2px 2px 2px 1px rgba(230, 230, 14, 0.8);
+ } */
+
+
+
+ /* Large devices (laptops and desktops, 992px and up) */
+ @media screen and (min-width: 992px) {
+     #main_menu a:hover {
+         /* border: 10px solid #ffffff; */
+         box-shadow: 2px 2px 2px 1px rgba(230, 230, 14, 0.8);
+     }
  }
