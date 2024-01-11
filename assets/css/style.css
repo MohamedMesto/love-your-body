@@ -125,6 +125,15 @@
  footer {
      color: beige;
      background-color: rgb(34, 113, 224);
+
+ }
+
+ footer a {
+     text-decoration: none;
+     color: inherit;
+     list-style-type: none;
+     display: flex;
+
  }
 
  /* Dealing with different Devices and Screen Sizes displaying */
