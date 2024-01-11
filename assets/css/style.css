@@ -1,3 +1,21 @@
+/* Google fonts import */
+
+/* the template of importing a font file */
+/* @import url('https://fonts.googleapis.com/css2?family=FontName'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap"); */
+
+
+
+
+
+
+
+
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 
 * {
@@ -13,14 +31,18 @@ body {
     flex-direction: column;
     /*Generic project styles */
     color: #0fc36c;
+    font-family: 'Lato', Geneva, Tahoma, sans-serif;
 }
-
-
 
 /* Header */
 header {
     color: beige;
     background-color: black;
+}
+
+h1,
+h2 {
+    font-family: 'Lemon', sans-serif;
 }
 
 /* Main content */
@@ -29,12 +51,6 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
-
-
-
-
-
-
 
 /* Footer */
 footer {
