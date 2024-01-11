@@ -117,7 +117,7 @@
      /* Make main element take up any surplus space to push footer down */
      flex: 1 0 auto;
 
-     margin-top: 100px;
+     margin-top: 200px;
 
  }
 
@@ -125,4 +125,36 @@
  footer {
      color: beige;
      background-color: rgb(34, 113, 224);
+ }
+
+ /* Dealing with different Devices and Screen Sizes displaying */
+
+
+ /* Media query: tablets and larger (768px and up) */
+ @media screen and (min-width: 768px) {
+
+     /* Header */
+     nav {
+         display: block;
+         position: relative;
+         box-shadow: none;
+         width: fit-content;
+         padding-right: 1rem;
+     }
+
+
+     #menu {
+         display: flex;
+     }
+
+     #menu>li {
+         padding-left: 1rem;
+     }
+
+
+     .nav-toggle-label {
+         display: none;
+     }
+
+
  }
