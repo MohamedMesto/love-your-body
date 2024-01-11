@@ -32,24 +32,44 @@
      width: 100%;
      padding: 0 1rem;
      position: fixed;
-     box-shadow: 0 2px 2px #3a3a3a;
+     box-shadow: 4px 4px 2px 1px rgb(34, 113, 224);
  }
 
  h1,
  h2 {
      font-family: "Lemon", sans-serif;
+     text-transform: uppercase;
+     letter-spacing: 2px;
  }
 
- ol,
- ul {
+ #main_menu {
      list-style-type: none;
+     letter-spacing: 2px;
+     font-size: 112%;
  }
 
+ #main_menu>li {
+     margin-top: 1em;
+     margin-bottom: 1em;
+ }
+
+ .active_link {
+     border: 1px solid rgb(34, 113, 224);
+     border-radius: 5px;
+ }
 
  header a {
      text-decoration: none;
      color: inherit;
  }
+
+ hr {
+     color: rgb(34, 113, 224);
+     size: 2px;
+ }
+
+
+
 
  /* Main content */
  main {
@@ -61,5 +81,5 @@
  /* Footer */
  footer {
      color: beige;
-     background-color: rgb(197, 13, 13);
+     background-color: rgb(34, 113, 224);
  }
