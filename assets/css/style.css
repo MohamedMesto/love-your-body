@@ -167,12 +167,36 @@
  }
 
 
+ #fasting_benefits-physical>div,
+ #fasting_benefits-mental>div {
+     line-height: 21px;
+     margin-bottom: 21px;
+ }
+
+ #fasting_benefits p {
+     padding: 0 21px;
+ }
+
+ #fasting_benefits hr {
+     border-top: 1px solid rgba(0, 0, 255, .4);
+     margin: 5px 0;
+ }
 
 
+ /* the 7 energy balls image */
 
+ #balls_cover_bg {
 
+     background: url("../images/fasting_reasons.png") no-repeat center center;
+     height: 90vw;
+     width: 90vw;
+     margin-bottom: 20px;
+     /* Makes the square image into a circle */
+     border-radius: 50%;
+     max-width: 300px;
+     max-height: 300px;
 
-
+ }
 
 
 
@@ -185,7 +209,7 @@
  }
 
  /* Social-networks-link icons*/
- #social-networks-link {
+ #social-networks-links {
 
      list-style-type: none;
      text-align: center;
@@ -193,17 +217,29 @@
      display: flex;
      justify-content: space-evenly;
 
+
  }
 
+ #social-networks-links i {
+     font-size: 160%;
+     padding: 5%;
+     color: #161fbd;
 
+ }
 
+ #social-networks-links-img {
+     /* Makes the square image into a circle */
+     border-radius: 40%
+ }
 
+ #fasting_benefits-image {
 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 
- /* Dealing with different Devices and Screen Sizes displaying */
-
-
- /* Media query: tablets and larger (768px and up) */
+ /* Dealing with different Devices and Screen Sizes displaying - Media query: tablets and larger (768px and up) */
  @media screen and (min-width: 768px) {
 
      /* Header */
