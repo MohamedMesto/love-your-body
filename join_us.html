@@ -70,8 +70,74 @@
       </nav>
     </header>
 
-    <!--Main content-->
-    <main>traveling through the galaxies</main>
+    <main>
+      <section id="join_us">
+        <form id="join_us-form" method="POST" action="https://form.tu.berlin">
+          <h2><i class="fa-solid fa-heartbeat"></i> Let's fly in the Sky!</h2>
+          <label for="first_name">First Name</label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            class="text-input"
+            required
+          />
+          <br />
+          <label for="last_name">Last Name</label>
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            class="text-input"
+            required
+          />
+          <br />
+          <label for="email_address">Email Address</label>
+          <input
+            type="email"
+            name="email_address"
+            id="email_address"
+            class="text-input"
+            required
+          />
+          <br />
+          <div class="radio-buttons">
+            <div>
+              <label for="one_Day_Fasting">One Day Fasting</label>
+              <input
+                type="radio"
+                name="fasting_preference"
+                id="one_Day_Fasting"
+                value="one_Day_Fasting"
+                required
+                checked
+              />
+            </div>
+            <div>
+              <label for="three_Days_Fasting">Three Days Fasting</label>
+              <input
+                type="radio"
+                name="fasting_preference"
+                id="three_Days_Fasting"
+                value="three_Days_Fasting"
+                required
+              />
+            </div>
+            <div>
+              <label for="both">Both</label>
+              <input
+                type="radio"
+                name="fasting_preference"
+                id="both"
+                value="both"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit" class="join-button">Let's Fast!</button>
+        </form>
+      </section>
+    </main>
 
     <!--Footer-->
     <footer>
