@@ -242,8 +242,15 @@
      background-color: rgba(0, 0, 255, .5);
  }
 
+ /* fasting world page */
+ #fasting_world_photos img {
+     width: 100%;
+     line-height: 1em;
+ }
 
-
+ #fasting_world_photos {
+     line-height: 0;
+ }
 
  /* Footer */
  footer {
@@ -346,8 +353,21 @@
      }
 
 
+     /* fasting world photos */
+     #fasting_world_photos {
+         column-count: 3;
+     }
+
  }
 
+
+ /* Media query: large or landscape phones (576px and up) */
+ @media screen and (min-width: 576px) {
+     #fasting_world_photos {
+         column-count: 2;
+         column-gap: 0;
+     }
+ }
 
  /* enable it , only if we need to active them on all devices sizes  */
  /* #main_menu a:hover {
@@ -361,6 +381,11 @@
      #main_menu a:hover {
          /* border: 10px solid #ffffff; */
          box-shadow: 2px 2px 2px 1px rgba(230, 230, 14, 0.8);
+     }
+
+
+     #fasting_world_photos {
+         column-count: 4;
      }
  }
 
