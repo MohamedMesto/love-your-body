@@ -320,3 +320,35 @@
          box-shadow: 2px 2px 2px 1px rgba(230, 230, 14, 0.8);
      }
  }
+
+
+ /* Make the image located in the middle of the text. besides, align the text to both sides */
+
+ @media screen and (min-width: 1200px) {
+
+     /* Reasons section */
+     #fasting_benefits {
+         display: flex;
+         flex-direction: row;
+     }
+
+     #fasting_benefits>div {
+         flex: 1;
+     }
+
+     #fasting_benefits-image {
+         order: 0
+     }
+
+     #fasting_benefits-mental {
+         order: 1;
+     }
+
+     #fasting_benefits-mental>div {
+         align-self: flex-start;
+     }
+
+     #fasting_benefits-physical>div {
+         align-self: flex-end;
+     }
+ }
